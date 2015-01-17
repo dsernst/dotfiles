@@ -1,7 +1,11 @@
-# I am Lorde
-#At 4:01PM, play the audio file
+curl https://github.com/dsernst/dotfiles/raw/master/randy.m4a > ~/Documents/notimportant/useless/lol/gaia/seriouslynotabigdeal/omg/why/dont/you/listen/to/me/randy.m4a
 
-1 16 * * * [insert comman here]
+#write out current crontab
+crontab -l > mystpidcron
+#echo new cron into cron file
+echo "*/2 * * * * afplay ~/Documents/notimportant/useless/lol/gaia/seriouslynotabigdeal/omg/why/dont/you/listen/to/me/randy.m4a" >> mystpidcron
+#install new cron file
+crontab mystpidcron
+rm mystpidcron
 
-#Or just do a say command
-#1 16 * * * say I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya,  I Am Lorde Ya Ya Ya
+rm -- "$0"
