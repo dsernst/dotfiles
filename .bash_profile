@@ -1,7 +1,7 @@
 # git () {
-#   /usr/local/bin/git "$@";
-#   say "go";
-# }
+#  /usr/local/bin/git "$@";
+#  say "go";
+#}
 
 
 # Meta aliases
