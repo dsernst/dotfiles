@@ -1,3 +1,6 @@
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # Meta aliases
 alias editor="subl" # set editor of choice for other aliases
 alias prof="editor ~/.bash_profile"
@@ -6,6 +9,7 @@ alias reprof=". ~/.bash_profile"
 alias cl="clear"
 
 alias subl="open -a Sublime\ Text"
+alias atom="open -a Atom"
 alias s.="open -a Sublime\ Text ."
 
 
@@ -27,6 +31,9 @@ j () {
 }
 euler () {
   cd ~/Documents/ProjectEuler
+}
+lv () {
+  cd ~/Documents/Liquid
 }
 alias quotes="editor ~/Documents/dsernst.github.io/data_favorite_quotes.yml"
 alias lintrc="editor ~/.eslintrc"
@@ -76,6 +83,8 @@ alias gprud="git pull --rebase upstream dev"
 alias gbo="git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:blue)(%(committerdate:relative))%(color:reset) %(color:yellow)%(refname):%(color:reset) %(color:red)%(objectname:short)%(color:reset) %(contents:subject)  %(color:green)%(authorname)%(color:reset)' | sed 's/refs\/heads\///g'"
 alias gacapf="git add .; git commit --amend --no-edit; git push --force"
 alias grH="git reset HEAD"
+alias gsh="git show"
+alias gst="git stash"
 
 function ignore () {
   echo "$1" >> .gitignore
@@ -91,15 +100,9 @@ cln () {
 alias hb="hub browse"
 alias hpr="hub pull-request"
 
-alias g-c="git-crypt"
-
-# npm aliases
-alias ni="npm install"
-alias nig="npm install -g"
-alias ni-s="npm install --save"
-
-# gilded aliases
-alias gdeploy="git checkout production && git merge master --no-edit && gulp build && git add . && git commit -m '(deploy) re-gulped' && eb deploy"
-alias gildedpr="hpr -b hesitant-tapdancers:master"
-
 export REPLYTO=david@dsernst.com
+
+
+# set bash tab title to folder name
+# set prompt to `[blue]folder name/ $ `
+PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
