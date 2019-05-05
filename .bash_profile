@@ -1,5 +1,7 @@
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 
 # Meta aliases
 alias editor="subl" # set editor of choice for other aliases
@@ -106,3 +108,15 @@ export REPLYTO=david@dsernst.com
 # set bash tab title to folder name
 # set prompt to `[blue]folder name/ $ `
 PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
+
+
+# Add pip to PATH
+export PATH=$PATH:~/Library/Python/2.7/bin
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+
+# Add git autocomplete to bash (via https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
+source ~/git-completion.bash
+# Add git autocomplete for our custom aliases
+source ~/.git-alias-autocompletion.sh
