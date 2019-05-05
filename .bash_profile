@@ -37,6 +37,9 @@ euler () {
 lv () {
   cd ~/Documents/Liquid
 }
+dot () {
+	cd ~/Documents/dotfiles
+}
 alias quotes="editor ~/Documents/dsernst.github.io/data_favorite_quotes.yml"
 alias lintrc="editor ~/.eslintrc"
 
@@ -87,6 +90,9 @@ alias gacapf="git add .; git commit --amend --no-edit; git push --force"
 alias grH="git reset HEAD"
 alias gsh="git show"
 alias gst="git stash"
+
+# npm aliases
+alias nr="npm run"
 
 function ignore () {
   echo "$1" >> .gitignore
