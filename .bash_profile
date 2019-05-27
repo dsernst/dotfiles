@@ -129,3 +129,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 source ~/git-completion.bash
 # Add git autocomplete for our custom aliases
 source ~/.git-alias-autocompletion.sh
+
+# Pretty ls
+# (requires "brew install coreutils")
+alias ls="gls -hp --color --group-directories-first"
