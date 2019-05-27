@@ -34,7 +34,10 @@ j () {
 euler () {
   cd ~/Documents/ProjectEuler
 }
-lv () {
+# lv () {
+#   cd ~/Documents/Liquid
+# }
+liq () {
   cd ~/Documents/Liquid
 }
 dot () {
