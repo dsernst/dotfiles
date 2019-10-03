@@ -96,6 +96,7 @@ alias gacapf="git add .; git commit --amend --no-edit; git push --force"
 alias grH="git reset HEAD"
 alias gsh="git show"
 alias gst="git stash"
+alias gbc="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
 
 # npm aliases
 alias nr="npm run"
