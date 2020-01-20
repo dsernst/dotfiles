@@ -43,6 +43,12 @@ euler () {
 liq () {
   cd ~/Documents/Liquid
 }
+future () {
+  cd ~/Documents/Liquid/FutureVoteNative
+}
+goenka () {
+	cd ~/Documents/GoenkaNative
+}
 dot () {
 	cd ~/Documents/dotfiles
 }
