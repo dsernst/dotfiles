@@ -106,6 +106,7 @@ alias gbc="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git b
 
 # npm aliases
 alias nr="npm run"
+alias nv="npm version"
 
 # yarn aliases
 alias yl="yarn lint"
