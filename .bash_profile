@@ -107,6 +107,9 @@ alias gbc="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git b
 # npm aliases
 alias nr="npm run"
 
+# yarn aliases
+alias yl="yarn lint"
+
 function ignore () {
   echo "$1" >> .gitignore
 }
