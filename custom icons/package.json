@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "fileicon": "^0.2.4"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
