@@ -43,6 +43,9 @@ euler () {
 liq () {
   cd ~/Documents/Liquid
 }
+sf () {
+  cd ~/Documents/Liquid/sf-legislation
+}
 future () {
   cd ~/Documents/Liquid/FutureVoteNative
 }
