@@ -107,6 +107,10 @@ alias gsh="git show"
 alias gst="git stash"
 alias gbc="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
 
+function gacmp () {
+  gacm $1 && git push
+}
+
 # npm aliases
 alias nr="npm run"
 alias nv="npm version"
