@@ -55,6 +55,8 @@ goenka () {
 dot () {
 	cd ~/Documents/dotfiles
 }
+alias icons="sudo node ~/Documents/dotfiles/custom\ icons/apply-all.js"
+
 alias quotes="editor ~/Documents/dsernst.github.io/data_favorite_quotes.yml"
 alias lintrc="editor ~/.eslintrc"
 
