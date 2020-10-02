@@ -7,9 +7,9 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Meta aliases
-alias editor="subl" # set editor of choice for other aliases
-alias prof="editor ~/.bash_profile"
-alias reprof=". ~/.bash_profile"
+alias editor="code" # set editor of choice for other aliases
+alias prof="editor ~/.zprofile"
+alias reprof=". ~/.zprofile"
 
 alias cl="clear"
 
@@ -149,9 +149,9 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 
 # Add git autocomplete to bash (via https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
-source ~/git-completion.bash
+# source ~/git-completion.bash
 # Add git autocomplete for our custom aliases
-source ~/.git-alias-autocompletion.sh
+# source ~/.git-alias-autocompletion.sh
 
 # Pretty ls
 # (requires "brew install coreutils")
