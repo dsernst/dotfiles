@@ -107,7 +107,7 @@ alias gacapf="git add .; git commit --amend --no-edit; git push --force"
 alias grH="git reset HEAD"
 alias gsh="git show"
 alias gst="git stash"
-alias gbc="git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
+alias gbc='git branch --merged main | grep -v "\* main" | xargs -n 1 git branch -d'
 
 function gacmp () {
   gacm $1 && git push
@@ -168,3 +168,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add deno to PATH
 export PATH="/Users/dsernst/.deno/bin:$PATH"
+
+# Add pyenv to PATH
+export PATH="~/.pyenv/shims:$PATH"
