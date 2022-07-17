@@ -9,7 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 # Meta aliases
 alias editor="code" # set editor of choice for other aliases
 alias prof="editor ~/.zprofile"
-alias reprof=". ~/.zprofile"
+alias reprof="source ~/.zprofile"
 
 alias cl="clear"
 
