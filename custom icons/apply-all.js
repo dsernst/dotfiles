@@ -9,11 +9,15 @@ const abs = (path) => join(__dirname.replace(' ', '\\ '), path)
 const apps = [
   ['./VS_Code.png', '/Applications/Visual\\ Studio\\ Code.app/'],
   ['./Simulator.png', '/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'],
-  ['./Safari.png', '/Applications/Safari.app/']
+  ['./Safari.png', '/Applications/Safari.app/'],
+  ['./Signal.png', '/Applications/Signal\\ Beta\\ \\(dse\\).app/'],
 ]
 
-bluebird.map(apps, ([newIcon, target]) => {
-  return exec(`${abs(fileiconProg)} set ${target} ${abs(newIcon)}`)
-    .then(console.log)
-    .catch(console.log)
-}, { concurrency: 1 })
+bluebird.map(
+  apps,
+  ([newIcon, target]) =>
+    exec(`${abs(fileiconProg)} set ${target} ${abs(newIcon)}`)
+      .then(console.log)
+      .catch(console.log),
+  { concurrency: 1 },
+)
