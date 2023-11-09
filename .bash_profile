@@ -179,3 +179,6 @@ alias yt="yarn test"
 grep-alias () {
   grep -i "alias $1=" ~/.zshrc ~/.profile /etc/bashrc /etc/zshrc ~/.zprofile
 }
+
+## official github cli (use `ghcli auth` to set personal access token)
+alias ghcli="/usr/local/Cellar/gh/2.38.0/bin/gh"
