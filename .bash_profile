@@ -142,8 +142,8 @@ export REPLYTO=david@dsernst.com
 PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
 
 
-# Add pip to PATH
-export PATH=$PATH:~/Library/Python/2.7/bin
+# Add python to PATH
+export PATH=$PATH:~/.pyenv/versions/2.7.18/bin
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
@@ -171,3 +171,11 @@ export PATH="/Users/dsernst/.deno/bin:$PATH"
 
 # Add pyenv to PATH
 export PATH="~/.pyenv/shims:$PATH"
+
+alias sup="supabase"
+alias yt="yarn test"
+
+# Find where alias might have be set:
+grep-alias () {
+  grep -i "alias $1=" ~/.zshrc ~/.profile /etc/bashrc /etc/zshrc ~/.zprofile
+}
