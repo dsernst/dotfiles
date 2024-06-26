@@ -146,7 +146,16 @@ PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
 # Add python to PATH
 export PATH=$PATH:~/.pyenv/versions/2.7.18/bin
 
+##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+
+# iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+fi
+##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
+
 
 
 # Add git autocomplete to bash (via https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
