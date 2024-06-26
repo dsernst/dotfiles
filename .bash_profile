@@ -14,9 +14,9 @@ alias reprof="source ~/.zprofile"
 
 alias cl="clear"
 
-alias subl="open -a Sublime\ Text"
-alias atom="open -a Atom"
-alias s.="open -a Sublime\ Text ."
+# alias subl="open -a Sublime\ Text"
+# alias atom="open -a Atom"
+# alias s.="open -a Sublime\ Text ."
 
 
 # Navigational aliases
@@ -32,24 +32,24 @@ dw () {
 dse () {
   cd ~/Documents/dsernst.github.io
 }
-j () {
-  cd ~/Documents/journal
-}
+# j () {
+#   cd ~/Documents/journal
+# }
 euler () {
   cd ~/Documents/ProjectEuler
 }
 # lv () {
 #   cd ~/Documents/Liquid
 # }
-liq () {
-  cd ~/Documents/Liquid
-}
-sf () {
-  cd ~/Documents/Liquid/sf-legislation
-}
-future () {
-  cd ~/Documents/Liquid/FutureVoteNative
-}
+# liq () {
+#   cd ~/Documents/Liquid
+# }
+# sf () {
+#   cd ~/Documents/Liquid/sf-legislation
+# }
+# future () {
+#   cd ~/Documents/Liquid/FutureVoteNative
+# }
 goenka () {
 	cd ~/Documents/GoenkaNative
 }
