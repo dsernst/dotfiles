@@ -182,3 +182,6 @@ grep-alias () {
 
 ## official github cli (use `ghcli auth` to set personal access token)
 alias ghcli="/usr/local/Cellar/gh/2.38.0/bin/gh"
+
+## Added automatically by homebrew to ~/.zprofile, moved here since that is symlinked to this file.
+eval "$(/opt/homebrew/bin/brew shellenv)"
