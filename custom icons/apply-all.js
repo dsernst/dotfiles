@@ -10,7 +10,7 @@ const apps = [
   ['./VS_Code.png', '/Applications/Visual\\ Studio\\ Code.app/'],
   ['./Simulator.png', '/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'],
   ['./Safari.png', '/Applications/Safari.app/'],
-  ['./Signal.png', '/Applications/Signal\\ Beta\\ \\(dse\\).app/'],
+  ['./Signal.png', '/Applications/Signal.app/'],
 ]
 
 bluebird.map(
