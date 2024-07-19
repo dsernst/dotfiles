@@ -123,6 +123,16 @@ grep-alias () {
 # official github cli (use `ghcli auth` to set personal access token)
 alias ghcli="/opt/homebrew/Cellar/gh/2.52.0/bin/gh"
 
+# list filesizes of current folder contents, including folders, sorted descending
+sizes () {
+  du -sh * | sort -hr | while read size item; do
+    if [ -d "$item" ]; then
+        echo -e "\e[1;34m${size}\t${item}\e[0m"  # Blue for directories
+    else
+        echo -e "${size}\t${item}"
+    fi
+  done
+}
 
 
 
