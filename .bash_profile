@@ -1,19 +1,12 @@
 # For best results, symlink this file to git repo
 # ln -s ~/Documents/dotfiles/.bash_profile ~/.bash_profile
 
-# Auto-added by nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
 # Meta aliases
 alias editor="code" # set editor of choice for other aliases
 alias prof="editor ~/.zprofile"
 alias reprof="source ~/.zprofile"
 
 alias cl="clear"
-
 
 # Navigational aliases
 ds () {
@@ -93,16 +86,14 @@ alias gbc='git branch --merged main | grep -v "\* main" | xargs -n 1 git branch 
 alias gr="git restore"
 alias grs="git restore --staged"
 
-function gacmp () {
-  gacm $1 && git push
-}
-
 # npm aliases
 alias nr="npm run"
 alias nv="npm version"
+alias ni="npm install"
 
 # yarn aliases
 alias yl="yarn lint"
+alias yt="yarn test"
 
 function ignore () {
   echo "$1" >> .gitignore
@@ -114,10 +105,6 @@ cln () {
   cd "$1"
 }
 
-# github aliases
-alias hb="hub browse"
-alias hpr="hub pull-request"
-
 export REPLYTO=david@dsernst.com
 
 
@@ -125,19 +112,6 @@ export REPLYTO=david@dsernst.com
 # set prompt to `[blue]folder name/ $ `
 PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
 
-
-# Add python to PATH
-export PATH=$PATH:~/.pyenv/versions/2.7.18/bin
-
-##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-
-# iterm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-fi
-##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
 
 
 
@@ -151,22 +125,7 @@ fi
 alias ls="gls -hp --color --group-directories-first"
 
 
-# Add Android SDK tools to PATH
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-
-# Add deno to PATH
-export PATH="/Users/dsernst/.deno/bin:$PATH"
-
-# Add pyenv to PATH
-export PATH="~/.pyenv/shims:$PATH"
-
 alias sup="supabase"
-alias yt="yarn test"
 
 # Find where alias might have be set:
 grep-alias () {
@@ -176,5 +135,43 @@ grep-alias () {
 ## official github cli (use `ghcli auth` to set personal access token)
 alias ghcli="/opt/homebrew/Cellar/gh/2.52.0/bin/gh"
 
-## Added automatically by homebrew to ~/.zprofile, moved here since that is symlinked to this file.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+
+
+### START auto-added to path ###
+
+  # Auto-added by nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+  ## Added automatically by homebrew to ~/.zprofile, moved here since that is symlinked to this file.
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  # Add Android SDK tools to PATH
+  # export ANDROID_HOME=$HOME/Library/Android/sdk
+  # export PATH=$PATH:$ANDROID_HOME/emulator
+  # export PATH=$PATH:$ANDROID_HOME/tools
+  # export PATH=$PATH:$ANDROID_HOME/tools/bin
+  # export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+  # Add deno to PATH
+  export PATH="/Users/dsernst/.deno/bin:$PATH"
+
+  # Add pyenv to PATH
+  export PATH="~/.pyenv/shims:$PATH"
+
+### END auto-added to path ###
+
+
+
+##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
+  if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+
+  # iterm2 shell integration
+  test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+  # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+  fi
+##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
