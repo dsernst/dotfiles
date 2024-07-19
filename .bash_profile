@@ -28,24 +28,9 @@ dw () {
 dse () {
   cd ~/Documents/dsernst.github.io
 }
-# j () {
-#   cd ~/Documents/journal
-# }
 euler () {
   cd ~/Documents/ProjectEuler
 }
-# lv () {
-#   cd ~/Documents/Liquid
-# }
-# liq () {
-#   cd ~/Documents/Liquid
-# }
-# sf () {
-#   cd ~/Documents/Liquid/sf-legislation
-# }
-# future () {
-#   cd ~/Documents/Liquid/FutureVoteNative
-# }
 goenka () {
 	cd ~/Documents/GoenkaNative
 }
