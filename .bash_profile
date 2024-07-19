@@ -30,12 +30,13 @@ goenka () {
 dot () {
 	cd ~/Documents/dotfiles
 }
-alias icons="sudo node ~/Documents/dotfiles/custom\ icons/apply-all.js"
 
+# Misc useful commands
+alias icons="sudo node ~/Documents/dotfiles/custom\ icons/apply-all.js"
+alias tcpu="top -o cpu"
 alias quotes="editor ~/Documents/dsernst.github.io/data_favorite_quotes.yml"
 alias lintrc="editor ~/.eslintrc"
 
-alias tcpu="top -o cpu"
 
 # git aliases
   alias gs="git status"
@@ -92,12 +93,13 @@ cln () {
   cd "$1"
 }
 
+# For sending mail from terminal
 export REPLYTO=david@dsernst.com
 
 
 # set bash tab title to folder name
 # set prompt to `[blue]folder name/ $ `
-PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
+# PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
 
 
 
@@ -111,7 +113,6 @@ PS1='\[\e]0;\W\a\]\[\033[01;34m\]\W/ \$ \[\033[0m\]'
 # (requires "brew install coreutils")
 alias ls="gls -hp --color --group-directories-first"
 
-
 alias sup="supabase"
 
 # Find where alias might have be set:
@@ -119,7 +120,7 @@ grep-alias () {
   grep -i "alias $1=" ~/.zshrc ~/.profile /etc/bashrc /etc/zshrc ~/.zprofile
 }
 
-## official github cli (use `ghcli auth` to set personal access token)
+# official github cli (use `ghcli auth` to set personal access token)
 alias ghcli="/opt/homebrew/Cellar/gh/2.52.0/bin/gh"
 
 
