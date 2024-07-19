@@ -109,6 +109,8 @@ alias grH="git reset HEAD"
 alias gsh="git show"
 alias gst="git stash"
 alias gbc='git branch --merged main | grep -v "\* main" | xargs -n 1 git branch -d'
+alias gr="git restore"
+alias grs="git restore --staged"
 
 function gacmp () {
   gacm $1 && git push
