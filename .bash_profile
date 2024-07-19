@@ -14,10 +14,6 @@ alias reprof="source ~/.zprofile"
 
 alias cl="clear"
 
-# alias subl="open -a Sublime\ Text"
-# alias atom="open -a Atom"
-# alias s.="open -a Sublime\ Text ."
-
 
 # Navigational aliases
 ds () {
