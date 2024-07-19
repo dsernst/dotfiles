@@ -35,19 +35,6 @@ alias icons="sudo node ~/Documents/dotfiles/custom\ icons/apply-all.js"
 alias quotes="editor ~/Documents/dsernst.github.io/data_favorite_quotes.yml"
 alias lintrc="editor ~/.eslintrc"
 
-# combine mkdir and cd
-mkcd () {
-  mkdir "$1"
-  cd "$1"
-}
-
-# combine cd & sublime open current directory
-s () {
-  "$1"
-  editor .
-}
-
-alias server="python -m SimpleHTTPServer"
 alias tcpu="top -o cpu"
 
 # git aliases
