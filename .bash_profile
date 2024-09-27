@@ -160,6 +160,10 @@ sizes () {
   # Add pyenv to PATH
   export PATH="~/.pyenv/shims:$PATH"
 
+  # Add bun to PATH
+  export BUN_INSTALL="$HOME/.bun"
+  export PATH="$BUN_INSTALL/bin:$PATH"
+
 ### END auto-added to path ###
 
 
