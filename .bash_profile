@@ -177,3 +177,7 @@ sizes () {
 
   fi
 ##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
+
+
+# Use homebrew's python3 instead of the system one
+export PATH="$(brew --prefix python3)/bin:$PATH"
