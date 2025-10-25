@@ -5,6 +5,7 @@
 alias editor="code" # set editor of choice for other aliases
 alias prof="editor ~/.zprofile"
 alias reprof="source ~/.zprofile"
+alias code="cursor"
 
 alias cl="clear"
 
