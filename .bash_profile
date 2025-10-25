@@ -189,3 +189,19 @@ export PATH="${HOME}/Documents/siv-secretly-cancellable-votes/circom-binaries:$P
 
 # path to cargo
 export PATH="${HOME}/.cargo/env:$PATH"
+
+
+
+anonymize_clipboard() {
+  my_user_id=xxxx
+  account_ids="1234567890|1234567890"  #regex
+  corp_words="xxxx|xxxx|xxxx|xxxx|xxxx"  #regex
+  project_names="xxxx|xxxx|xxxx|xxxx|xxxx"  # regex
+  pii="xxxx|xxxx|xxxx|xxxx|xxxx|xxxx"  # regex
+  host_names="xxxx|xxxx|xxxx|xxxx|xxxx|xxxx|xxxx|xxxx|xxxx"  # regex
+  # anonymize IPs
+  pbpaste | sed -E -e 's/([0-9]{1,3})\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/\1.x.x.x/g' \
+  -e "s/(${corp_words}|${project_names}|${my_user_id}|${pii}|${host_names})/xxxx/g" -e "s/(${account_ids})/1234567890/g" | pbcopy
+  pbpaste
+}
+alias anon=anonymize_clipboard
