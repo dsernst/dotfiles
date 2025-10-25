@@ -183,3 +183,6 @@ sizes () {
 
 # Use homebrew's python3 instead of the system one
 export PATH="$(brew --prefix python3)/bin:$PATH"
+
+# path to circom
+export PATH="${HOME}/Documents/siv-secretly-cancellable-votes/circom-binaries:$PATH"
