@@ -79,6 +79,7 @@ alias lintrc="editor ~/.eslintrc"
 alias nr="npm run"
 alias nv="npm version"
 alias ni="npm install"
+alias nt="npm test"
 
 # yarn aliases
 alias yl="yarn lint"
