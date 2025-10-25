@@ -186,3 +186,6 @@ export PATH="$(brew --prefix python3)/bin:$PATH"
 
 # path to circom
 export PATH="${HOME}/Documents/siv-secretly-cancellable-votes/circom-binaries:$PATH"
+
+# path to cargo
+export PATH="${HOME}/.cargo/env:$PATH"
