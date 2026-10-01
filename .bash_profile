@@ -74,6 +74,7 @@ alias lintrc="editor ~/.eslintrc"
   alias gbc='git branch --merged main | grep -v "\* main" | xargs -n 1 git branch -d'
   alias gr="git restore"
   alias grs="git restore --staged"
+  alias hb="git remote -v | grep origin | grep fetch"
 
 # npm aliases
 alias nr="npm run"
