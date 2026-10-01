@@ -206,3 +206,5 @@ anonymize_clipboard() {
   pbpaste
 }
 alias anon=anonymize_clipboard
+
+alias myip="ipconfig getifaddr en0"
